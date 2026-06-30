@@ -33,12 +33,12 @@ export default function AboutPage() {
 
       {/* Gallery interior image */}
       <section className="mx-auto max-w-shell px-5 pb-6 sm:px-10 sm:pb-[30px]">
-        <div className="relative aspect-[3/2] w-full overflow-hidden sm:aspect-[24/9]">
+        <div className="relative w-full overflow-hidden" style={{ height: "clamp(320px, 45vw, 600px)" }}>
           <Image
             src="/gallery-interior.png"
             alt="Meridian gallery interior"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             sizes="100vw"
           />
         </div>
